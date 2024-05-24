@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+    <div>
     <h1 style="position: sticky;"> Calculator</h1>  
+    <label class="switch">
+        <input type="checkbox" id="mode-switch">
+        <span class="slider round"></span>
+    </label>
+    </div>
     <div class="formstyle">  
         <form name="form1"> 
             <input id="cal" type="text" name="answer"> <br>
             <br>
+            <br>
+            <button id="mic-btn">Speak</button>
+            <br> <br> 
             <input type="button" value="1" onclick="appendValue('1')">  
             <input type="button" value="2" onclick="appendValue('2')">  
             <input type="button" value="3" onclick="appendValue('3')">  
@@ -34,7 +42,7 @@
             <input type="button" value="." onclick="appendValue('.')">  
             <input type="button" value="0" onclick="appendValue('0')">  
             <input type="button" value="/" onclick="appendValue('/')">  
-            <input type="button" value="=" onclick="calculate()">  
+            <input type="button" id="equal" value="=" onclick="calculate()">  
             <br>   
             <input type="button" value="Clear All" onclick="clearAll()" id="clear">  
             <br>   

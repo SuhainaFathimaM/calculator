@@ -117,13 +117,3 @@ input
 #equal{
     background: green;
 }
-
-#mic-btn {
-    width: 80px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #4CAF50; 
-    color: white;
-    cursor: pointer;
-}

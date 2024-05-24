@@ -24,28 +24,5 @@ modeswitch.addEventListener("change",()=>
         }
 });
 
-const micBtn = document.getElementById('mic-btn');
-const recognition = new webkitSpeechRecognition(); // Use webkitSpeechRecognition for Chrome
-
-micBtn.addEventListener('click', () => {
-    recognition.start();
-});
-
-recognition.onresult = (event) => {
-    const transcript = event.results[0][0].transcript;
-    document.form1.answer.value = transcript;
-    calculate(); // Calculate after voice input
-};
-
-recognition.onerror = (event) => {
-    console.error("Speech recognition error:", event);
-};
-
-// Calculate after voice input
-recognition.onend = () => {
-    calculate(); 
-};
-
-
 
 
